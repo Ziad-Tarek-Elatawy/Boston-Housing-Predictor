@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boston Housing Predictor</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="glass-container">
+        <h1>Boston Housing Predictor</h1>
+        <p class="subtitle">Omega-Singularity Engineering Multiverse</p>
+
+        <form action="/predict" method="post">
+            <div class="form-group">
+                <label for="rm">Total Number of Rooms (RM)</label>
+                <input type="number" step="0.01" id="rm" name="rm" placeholder="e.g. 6.5" value="{{ rm|default('') }}"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="lstat">Neighborhood Poverty Level % (LSTAT)</label>
+                <input type="number" step="0.01" id="lstat" name="lstat" placeholder="e.g. 15.0"
+                    value="{{ lstat|default('') }}" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ptratio">Student-Teacher Ratio (PTRATIO)</label>
+                <input type="number" step="1" id="ptratio" name="ptratio" placeholder="e.g. 15"
+                    value="{{ ptratio|default('') }}" required>
+            </div>
+
+            <button type="submit" class="glow-on-hover">Predict Price</button>
+        </form>
+
+        {% if prediction_text %}
+        <div class="result-box">
+            <h2>{{ prediction_text }}</h2>
+        </div>
+        {% endif %}
+    </div>
+
+    <!-- Animated Background Elements -->
+    <div class="circle circle-1"></div>
+    <div class="circle circle-2"></div>
+    <div class="circle circle-3"></div>
+</body>
+
+</html>
