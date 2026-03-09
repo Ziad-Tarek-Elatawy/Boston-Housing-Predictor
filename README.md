@@ -4,7 +4,7 @@ An end-to-end Machine Learning web application deployed with **FastAPI**. This s
 
 ---
 
-## 🏗️ Project Architecture & Structure
+## Project Architecture & Structure
 
 The repository is structured to cleanly separate Machine Learning Training from Production Application Serving.
 
@@ -28,7 +28,7 @@ Boston Housing Prices/
 
 ---
 
-## 🚀 Installation & Setup
+## Installation & Setup
 
 1. **Clone the repository** (or navigate to the project directory):
    ```bash
@@ -43,7 +43,7 @@ Boston Housing Prices/
 
 ---
 
-## 🧠 Phase 1: Model Training & Evaluation
+## Phase 1: Model Training & Evaluation
 
 All Research, Exploratory Data Analysis (EDA), and Model Optimization occurred logically within the Jupyter environment.
 
@@ -59,7 +59,7 @@ All Research, Exploratory Data Analysis (EDA), and Model Optimization occurred l
 
 ---
 
-## 🌐 Phase 2: Web Application (End-to-End)
+## Phase 2: Web Application (End-to-End)
 
 The backend exposes a highly performant and asynchronous REST API serving a dynamic web frontend utilizing the trained `.pkl` model.
 
