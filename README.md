@@ -1,4 +1,4 @@
-# OMEGA-SINGULARITY: BOSTON HOUSING PREDICTION
+# BOSTON HOUSING PREDICTION
 
 An end-to-end Machine Learning web application deployed with **FastAPI**. This system predicts housing prices in Boston based on a subset of features using an optimized Decision Tree Regressor.
 
